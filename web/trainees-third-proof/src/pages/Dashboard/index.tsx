@@ -9,14 +9,12 @@ export const Dashboard = () => {
       <header className="dashboard-header">
         <div className="header-block__left">
           <button className="header-mobile-menu__btn">
-            <svg className="header-mobile-menu__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 12.0001H21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M3 6H15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M3 17.9999H15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
-          <img className="header-company__avatar" src="./assets/images/company-avatar.png" alt="Avatar da Empresa" />
 
+          </button>
+          <img className="header-company__avatar" src="../../assets/icons/icon-avatar.svg" alt="Avatar da Empresa" />
+          <a href="#">
+            Academy Store
+          </a>
         </div>
         <ul className="header-block__right">
           <li className="header-help__item">
@@ -47,11 +45,7 @@ export const Dashboard = () => {
           </li>
           <li className="header-notice__item">
             <a href="#" className="header-notice__link">
-              <svg className="header-notice__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.5 8.40096C17.5 6.96853 16.9205 5.59478 15.8891 4.5819C14.8576 3.56903 13.4587 3 12 3C10.5413 3 9.14236 3.56903 8.11091 4.5819C7.07946 5.59478 6.5 6.96853 6.5 8.40096C6.5 14.7021 3.75 16.5024 3.75 16.5024H20.25C20.25 16.5024 17.5 14.7021 17.5 8.40096Z" fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M13.5859 20.1028C13.4247 20.3756 13.1934 20.6021 12.9151 20.7595C12.6368 20.9169 12.3212 20.9998 12 20.9998C11.6789 20.9998 11.3633 20.9169 11.085 20.7595C10.8067 20.6021 10.5754 20.3756 10.4142 20.1028" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <circle cx="18" cy="3.75" r="3" fill="#F03460" />
-              </svg>
+            <img className="" src="./assets/icons/icon-dashboard.svg" alt="Icone menu 1" />
             </a>
             <ul className="header-notice__notification">
               <li className="header-notice__notification--01">
@@ -116,6 +110,7 @@ export const Dashboard = () => {
           <div className="aside-menu">
             <ul className="aside-menu__list">
               <li className="aside-submenu__item" >
+              <img className="" src="../../assets/icons/icon-dashboard.svg" alt="Icone menu 1" />
                 <a href="#" className="aside-submenu__item--link">Relatórios</a></li>
               <li className="aside-submenu__item" >
                 <a href="#" className="aside-submenu__item--link">Para Vender</a></li>
@@ -138,7 +133,7 @@ export const Dashboard = () => {
               Olá, Gustavo
             </h1>
             <p className="period__text">
-              veja abaixo o resumo da sua organização
+              Veja abaixo o resumo da sua organização
             </p>
           </section>
           <section className="report">
@@ -248,61 +243,6 @@ export const Dashboard = () => {
                     </button>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          <section className="insights-section">
-            <div className="insights-section__title">
-              <img src="./assets/images/eyes-image.png" className="insights-section__title--image" />
-              <h2 className="insights-section__title--text">
-                Últimas vendas
-              </h2>
-            </div>
-            <div className="insights-section__products">
-              <span className="insights-section__products--name">Produtos mais vendidos</span>
-              <div className="insights-section__products--description">
-                <span className="insights-section__products--description-product">Produto</span>
-                <span className="insights-section__products--description-id">Número do Pedido</span>
-                <span className="insights-section__products--description-departament">Departamento</span>
-                <span className="insights-section__products--description-value">Valor</span>
-              </div>
-              <div className="insights-section__products--list"></div>
-            </div>
-            <div className="insights-nav">
-              <div className="insights-nav__quantity">
-                <span className="insights-nav__quantity--text">Exibindo</span>
-                <select className="insights-nav__selection">
-                  <option className="insights-nav__selection-value" value="5" selected>5</option>
-                  <option className="insights-nav__selection-value" value="10" selected>10</option>
-                </select>
-                <span className="insights-nav__quantity--text">produtos por pagina</span>
-              </div>
-              <div className="insights-nav__pagination">
-                <ul className="insights-nav__pagination-list">
-                  <li className="insights-nav__pagination-arrow">
-                    <a className="insights-nav__pagination-arrow--backward" href="#">
-                      <svg className="pagination-arrow--backward__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 5L6 8L9 11" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li className="insights-nav__pagination-item">
-                    <a className="insights-nav__pagination-item--number insights-nav__pagination-item--number-active" href="#">1</a>
-                  </li>
-                  <li className="insights-nav__pagination-item">
-                    <a className="insights-nav__pagination-item--number" href="#">2</a>
-                  </li>
-                  <li className="insights-nav__pagination-item">
-                    <a className="insights-nav__pagination-item--number" href="#">3</a>
-                  </li>
-                  <li className="insights-nav__pagination-arrow">
-                    <a className="insights-nav__pagination-arrow--forward" href="#">
-                      <svg className="pagination-arrow--forward__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.99988 11L9.99988 8L6.99988 5" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
               </div>
             </div>
           </section>
